@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+const BASE_URL = "https://lostandfound-1-7zzd.onrender.com";
 
-const LOST_API_URL = "http://localhost:8081/api/items";
-const FOUND_API_URL = "http://localhost:8081/api/found-items";
+const LOST_API_URL = `${BASE_URL}/api/items`;
+const FOUND_API_URL = `${BASE_URL}/api/found-items`;
 
 // ---------- Reusable styles ----------
 const styles = {
