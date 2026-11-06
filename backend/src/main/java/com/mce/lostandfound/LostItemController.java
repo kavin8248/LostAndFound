@@ -15,7 +15,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import jakarta.validation.Valid;
 
-@CrossOrigin
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://lost-and-found-six-mu.vercel.app"
+})
 @RestController
 @RequestMapping("/api/items")
 public class LostItemController {

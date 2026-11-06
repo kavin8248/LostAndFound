@@ -20,7 +20,10 @@ import jakarta.validation.Valid;
 
 @RestController
 @Validated
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://lost-and-found-six-mu.vercel.app"
+})
 @RequestMapping("/api/found-items")
 public class FoundItemController {
 	@Autowired
